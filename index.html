@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Table Builder Plugin</title>
+    <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/tableBuilder.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            var headers = ['First Name', 'Last Name', 'Middle Name', 'Age', 'Location', 'Birthday'];
+
+            $("#tableContainer").tableBuilder({
+                headers: headers,
+            });
+        });
+    </script>
+</head>
+<body>
+        <div id="tableContainer"></div>
+</body>
+</html>
